@@ -80,11 +80,10 @@ async function fetchWeather(lat, long, pluie, degres) {
 
     document.getElementById(`${pluie}`).innerHTML = "<strong>" + dataWeather.current.rain + "</strong>";
     document.getElementById(`${degres}`).innerHTML = "<strong>" + dataWeather.current.temperature_2m + "</strong>";
-
 }
 
-fetchWeather(LAT_PARIS, LONG_PARIS, pluie_paris, degres_paris);
-fetchWeather(LAT_LYON, LONG_LYON, pluie_lyon, degres_lyon);
-fetchWeather(LAT_NANTES, LONG_NANTES, pluie_nantes, degres_nantes);
-fetchWeather(LAT_MARSEILLE, LONG_MARSEILLE, pluie_marseille, degres_marseille);
-fetchWeather(LAT_LILLE, LONG_LILLE, pluie_lille, degres_lille);
+fetchWeather(LAT_PARIS, LONG_PARIS, "pluie_paris", "degres_paris");
+fetchWeather(LAT_LYON, LONG_LYON, "pluie_lyon", "degres_lyon");
+fetchWeather(LAT_NANTES, LONG_NANTES, "pluie_nantes", "degres_nantes");
+fetchWeather(LAT_MARSEILLE, LONG_MARSEILLE, "pluie_marseille", "degres_marseille");
+fetchWeather(LAT_LILLE, LONG_LILLE, "pluie_lille", "degres_lille");
